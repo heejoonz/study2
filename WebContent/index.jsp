@@ -8,9 +8,41 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Index.jsp</title>
+<style type="text/css">
+	#header{}
+	#left {width: 20%; float: left;}
+	#content {width: 80%; float: left;}
+	#footer {clear: both;}
+</style>
 </head>
 <body>
-<table>
+
+<div>
+	<div id="header">
+		<!-- 메뉴영역 Start -->
+		<jsp:include page="/include/top.jsp" flush="false" />				
+		<!-- 메뉴영역 END -->	
+	</div>
+	<div id="left">
+		<!-- 좌측영역 Start -->			
+		<jsp:include page="/include/left.jsp" flush="false" />						
+		<!-- 좌측영역 END -->
+	</div>
+	<div id="content">
+		<!-- 본문 Start -->
+		누구누구 사이트입니다.
+		<!-- 본문 END -->	
+	</div>
+	<div id="footer">
+		<!-- 푸터 Start -->
+		<jsp:include page="/include/footer.jsp" flush="false" />
+		<!-- 푸터 END -->
+	</div>
+	
+</div>
+
+
+<%-- <table>
 	<colgroup>
 		<col width="20%;" />
 		<col />
@@ -49,7 +81,7 @@
 	</tr>
 	
 	
-</table>
+</table> --%>
 
 
 
