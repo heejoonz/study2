@@ -1,6 +1,9 @@
 package com.study.board.vo;
 
 import java.io.Serializable;
+//import java.util.List;
+
+//import com.study.member.vo.Member;
 
 public class Board implements Serializable{
 	
@@ -17,6 +20,8 @@ public class Board implements Serializable{
 	private int bo_read_cnt ;
 	private String bo_reg_date ;
 	private String bo_mod_date ;
+	
+	//private List<Member> fileList;
 	
 	public Board() {}
 	
